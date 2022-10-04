@@ -40,6 +40,7 @@ with DAG(
         task_id='ingestion_status',
         namespace=SPARK_NAMESPACE,
         application_name="{{ task_instance.xcom_pull(task_ids='ingestion')['metadata']['name'] }}",
+        attach_log=True
     )
 
     # [START task_sequence]
