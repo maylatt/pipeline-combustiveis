@@ -1,7 +1,7 @@
 apiVersion: "sparkoperator.k8s.io/v1beta2"
 kind: SparkApplication
 metadata:
-  name: "pipeline_combustiveis"
+  name: "pipeline-combustiveis"
   namespace: processing
 spec:
   timeToLiveSeconds: 60
