@@ -29,7 +29,7 @@ with DAG(
     ingestion = SparkKubernetesOperator(
         task_id='ingestion',
         namespace=SPARK_NAMESPACE,
-        application_file='pipeline-example.yaml',
+        application_file='pipeline-combustiveis.yaml',
         do_xcom_push=True
     )
 
