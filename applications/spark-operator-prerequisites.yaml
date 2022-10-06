@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: processing
+
+--- 
+
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: spark
+  namespace: processing
+  
+---
+
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: spark-role
+  namespace: processing
+subjects:
+- kind: ServiceAccount
+  name: spark 
+  namespace: processing
+roleRef:
+  kind: ClusterRole
+  name: cluster-admin
+  apiGroup: rbac.authorization.k8s.io

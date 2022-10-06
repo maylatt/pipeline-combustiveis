@@ -4,7 +4,7 @@ metadata:
   name: "combustiveis-processing"
   namespace: processing
 spec:
-  timeToLiveSeconds: 60
+  timeToLiveSeconds: 180
   type: Python
   pythonVersion: "3"
   mode: cluster

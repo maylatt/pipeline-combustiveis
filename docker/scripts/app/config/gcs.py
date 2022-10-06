@@ -1,0 +1,2 @@
+LANDING_BUCKET="lading-zone-299792458"
+SILVER_BUCKET="silver-zone-299792458"
