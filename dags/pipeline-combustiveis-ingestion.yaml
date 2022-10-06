@@ -3,6 +3,9 @@ kind: Pod
 metadata:
   name: combustiveis-ingestion
 spec:
+  hadoopConf:
+    "fs.gs.impl": "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFileSystem"
+    "fs.AbstractFileSystem.gs.impl": "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFS"
   containers:
   - name: python-container
     image: maylatt/spark-operator:3.1.1
