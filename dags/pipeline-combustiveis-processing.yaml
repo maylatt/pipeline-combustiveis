@@ -4,6 +4,11 @@ metadata:
   name: "combustiveis-processing"
   namespace: processing
 spec:
+  hadoopConf:
+    "fs.gs.auth.service.account.enable": "true"
+    "fs.gs.auth.service.account.json.keyfile": "/mnt/secrets/key.json"
+    "fs.gs.impl": "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFileSystem"
+    "fs.AbstractFileSystem.gs.impl": "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFS"
   timeToLiveSeconds: 180
   type: Python
   pythonVersion: "3"
