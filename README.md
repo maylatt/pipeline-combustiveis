@@ -12,6 +12,7 @@
 * Criação da Service Account do Spark
 * Criação da imagem de container do spark-operator
 * Criação da imagem de container do notebook
+* Criação dos buckets para as camadas landing e silver
 
 ### 2 - Deploy Airflow
 

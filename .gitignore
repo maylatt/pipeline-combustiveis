@@ -1,5 +1,4 @@
 config/*
 *.pyc
 *settings.json
-*.ipynb
 script.txt
