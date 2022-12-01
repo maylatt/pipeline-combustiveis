@@ -4,12 +4,12 @@
     <img alt="Arquitetura" src="./docs/img/arquitetura.jpg" />
 </p>
 
-**Fonte de dados** : <a href="https://dados.gov.br/dataset/serie-historica-de-precos-de-combustiveis-por-revenda" target="blank"><b>Série Histórica de Preços de Combustíveis</b></a>
+**Fonte de dados** : <a href="https://dados.gov.br/dados/conjuntos-dados/serie-historica-de-precos-de-combustiveis-por-revenda" target="blank"><b>Série Histórica de Preços de Combustíveis</b></a>
 
 ### 1 - Pré-requisitos
 
 * Criação do cluster GKE
-* Criação da Service Account do Spark
+* Criação da Service Account do Spark (Adicionar role "Storage Admin")
 * Criação da imagem de container do spark-operator
 * Criação da imagem de container do notebook
 * Criação dos buckets para as camadas landing e silver
